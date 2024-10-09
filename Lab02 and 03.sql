@@ -118,4 +118,7 @@ insert into student values (6,"Usman",17,"Database Systems","A","Karachi","BSCS"
 select * from student where Department = "BSCS";
 
 delete from student where Age < 18;
+
+## Performing basic arithmetic operations 
+
 select name,Salary, 12*Salary+100 from teacher;
