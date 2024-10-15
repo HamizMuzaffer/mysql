@@ -68,12 +68,12 @@ use uni;
 select * from student;
 select * from teacher;
 
-# Inserting Values in teacher's table 
+# Inserting Values in teacher table 
 
 insert into teacher values(1,"Aliza","Database",20000,"Karachi","BSCS");
-select * from teacher;
 
-# Further insering values in a teacher's table 
+
+# Further insering values in a teacher table 
 
 insert into teacher (id,name,subject,Salary,City,Department) 
 values
@@ -83,7 +83,7 @@ values
  (6,"Salam Shah","COAL",100000,"Karachi","BBA");
  
 
-# Updating salary field of teacher's table 
+# Updating salary field of teacher table 
 
 update teacher set Salary = 80000 WHERE Department = "BBA";
 
