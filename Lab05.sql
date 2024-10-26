@@ -44,13 +44,14 @@ select studentName from uniData where Department != "BSCS";
 
 -- Question 05 (List all the names of student belonging to BSCS department under age 25.)
 
-select studentName from uniData where Department = "BSCS" AND age > 25 ;
+select studentName from uniData where Department = "BSCS" AND age < 25 ;
 
 -- Question 06 (List different departments in the table.)
 
-select department from uniData;
+select distinct department from uniData;
 
 -- Question 07 (select all those students having grade B)
+
 select studentName from uniData where grade = "B";
 
 -- Question 08 (Select all information from student, sorting by student name.)
