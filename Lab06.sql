@@ -16,16 +16,9 @@ select reverse(studentName) as reverseName from admissionInfo where studentName 
 
 -- Question 05 () 
 
-select date(admissionDate) as extractedDate from admissionInfo;
-select adddate(admissionDate,01) from admissionInfo;
-select curtime() from admissionInfo;
-select curdate() from admissionInfo;
-select subdate(admissionDate,01) from admissionInfo;
-select dayname(admissionDate) from admissionInfo;
-select dayofmonth(admissionDate) from admissionInfo;
-select monthname(admissionDate) from admissionInfo;
-select weekofyear(admissionDate) from admissionInfo;
-
+select
+date(admissionDate),adddate(admissionDate,01),curtime(),curdate(),subdate(admissionDate,01),dayname(admissionDate),dayofmonth(admissionDate),monthname(admissionDate),
+weekofyear(admissionDate) from admissionInfo;
 -- Question 06 ()
 
 select count(age) from uniData;

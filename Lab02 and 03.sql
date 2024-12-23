@@ -37,7 +37,8 @@ id INT PRIMARY KEY,
 name varchar(50) not null,
 subject varchar(20),
 Salary INT,
-City varchar(20) not null,
+Department varchar(40),
+City varchar(20) not null
 );
 
 create table department ( 
@@ -69,8 +70,9 @@ select * from student;
 select * from teacher;
 
 # Inserting Values in teacher table 
+delete from teacher;
 
-insert into teacher values(1,"Aliza","Database",20000,"Karachi","BSCS");
+insert into teacher values(1,"Aliza","Database",20000,"BSCS","Karachi");
 
 
 # Further insering values in a teacher table 
